@@ -90,5 +90,23 @@ $('.fibonacci').click(function fibonacci(){
 // slice відрізає від масиву перші n елементів, якщо n < 2
 })
 
+//factorial
+$('.factorial').click(function factorial(){
+    var factorial = parseInt(prompt("Введіть будь-ласка своє число для обчислення факторіала"));
+    var x = factorial;
+    if (x != null) {
+        function factorial(x) {
+            var n = 1;
+            var f = 1;
+            while(f <= x) {
+                n = n * f;
+                f++;
+            }
+            return n;
+        }
+        alert(factorial(x));
+    }
+})
+
 
 
