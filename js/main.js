@@ -108,5 +108,56 @@ $('.factorial').click(function factorial(){
     }
 })
 
+//number string bool - info
+$('.info').click(function(){
+    var i = $('.whatit').val();
+    if(!isNaN(Number(i))){
+        console.log(Number(i),'number');
+    }else if( i === 'true' || i ==='false'){
+        console.log(i,'boolean')
+    }else{
+        console.log(i,'string')
+    }
+})
+
+//number string bool - rotate
+$('.rotatein').click(function(){
+    var i = $('.rotates').val();
+    if(!isNaN(Number(i))) {
+        console.log(typeof(Number(i), 'number'));
+    }else {
+        console.log(Number(i), 'string');
+    }
+    }
+)
+
+//%1000
+$('.thousandth').click(function percent(){
+        var one = parseInt(prompt("Введіть будь-ласка своє число для отримання % від 1000"));
+        var x = one;  // число з клавіатури
+        var f = 1000; // відсоток від 1000
+        var r;        // результат
+        if (x != null && x <= f) {
+            r = x + ' це ' + ((x / f) * 100) + '% від ' + f;
+        } else {
+            r = 'Вибачте ви не ввели число або воно більше 100%';
+        }
+        console.log(r);
+    }
+)
+
+$(window).resize(function () {
+    var x = 768;
+    if ($(window).width() < 768) {
+        console.log(x);
+    }
+})
+
+
+
+
+
+
+
 
 
