@@ -146,12 +146,24 @@ $('.thousandth').click(function percent(){
     }
 )
 
+//resize jq
 $(window).resize(function () {
     var x = 768;
     if ($(window).width() < 768) {
         console.log(x);
     }
 })
+
+//animate jq
+$('#clickme').click(function() {
+    $('#book').animate({
+        opacity: 0.25,
+        left: '+=50',
+        height: 'toggle'
+    }, 600, function() {
+        // Анімація закінчена.
+    });
+});
 
 
 
