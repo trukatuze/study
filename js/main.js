@@ -118,6 +118,7 @@ $('.info').click(function(){
     }else{
         console.log(i,'string')
     }
+    // console.log(typeof i);
 })
 
 //number string bool - rotate
@@ -156,7 +157,7 @@ $(window).resize(function () {
 
 //animate jq
 $('#clickme').click(function() {
-    $('#book').animate({
+    $('#air').animate({
         opacity: 0.25,
         left: '+=50',
         height: 'toggle'
@@ -164,6 +165,9 @@ $('#clickme').click(function() {
         // Анімація закінчена.
     });
 });
+
+
+
 
 
 
